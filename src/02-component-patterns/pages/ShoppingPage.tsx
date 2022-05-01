@@ -1,17 +1,15 @@
 import ProductCard from "../components/ProductCard"
+import { ProductImage } from "../components/ProductImage";
+import { ProductTitle } from "../components/ProductTitle";
+import { ProductButtons } from "../components/ProductButtons";
 
 const product = {
     id: "1",
     title: "Coffee Mug",
+    img: "./coffee-mug.png"
 }
 
-
 const ShoppingPage = () => {
-
-    
-
-
-
     return (
         <div>
             <div>
@@ -23,9 +21,13 @@ const ShoppingPage = () => {
                 flexDirection: 'row',
                 flexWrap: "wrap"
             }}>
-                <ProductCard product={product}/>
+
+                <ProductCard product={product}>
+                    <ProductImage />
+                    <ProductTitle title={"Cafe"} />
+                    <ProductButtons />
+                </ProductCard>
             </div>
-            
         </div>
     )
 }
