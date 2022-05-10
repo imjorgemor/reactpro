@@ -33,6 +33,9 @@ const FormikYupPage = () => {
         <div>
             <h1>Formik Yup tutorial</h1>
 
+            {/* GET FIELD PROPS
+            Includes onblur, onchange, value */}
+
             <form onSubmit={handleSubmit} noValidate autoComplete='off'>
                 <label htmlFor="firstName">First Name</label>
                 <input
