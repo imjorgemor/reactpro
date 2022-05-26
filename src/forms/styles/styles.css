@@ -1,25 +1,71 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 form {
     display: flex;
     flex-direction: column;
     width: 400px;
 }
 
-input, select {
+input,
+select {
     margin-top: 5px;
     outline: none;
     padding: 10px;
 }
-
 
 button {
     margin-top: 20px;
     padding: 10px;
 }
 
-span, .error-message {
+span,
+.error-message {
     color: red;
 }
 
 .has-error {
     border: 1px solid red;
+}
+
+/* CHEKBOX */
+.input-checkbox {
+    height: 50px;
+    width: 20px;
+    padding: 6px 10px;
+}
+.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-right: 9px solid #454b51;
+    border-bottom: 6px solid transparent;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* .checkbox:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    height: 19px;
+    border-left: 9px solid #454b51;
+    border-bottom: 9px solid transparent;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    
+} */
+.checkbox:checked {
+    border-right-color: #2b8ced;
+}
+
+.checkbox:checked:before {
+    border-left-color: #2b8ced;
 }
