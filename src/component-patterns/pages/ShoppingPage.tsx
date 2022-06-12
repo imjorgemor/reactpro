@@ -30,6 +30,7 @@ export const ShoppingPage = () => {
                 </ProductCard>
                 <ProductCard
                     product={product}
+                    style={{backgroundColor: "#70d1f8" }}
                 >
                     <ProductImage />
                     <ProductTitle title="hola" />
